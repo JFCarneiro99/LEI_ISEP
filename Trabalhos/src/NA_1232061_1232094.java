@@ -7,7 +7,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class NA_1232061_1232094 {
     public static final int MAX_AUTONOMIA = 100;
-    public static final int X = 2;
+    public static final int X = 8;
     public static final double CUSTO_RECARGA_EUROS = 5.5;
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -67,7 +67,7 @@ public class NA_1232061_1232094 {
     }
 
     private static void visualizarVeiculoDePrevencaoNoDiaX(int[] matrizVeiculoDePrevencaoPorDia, int dia) {
-        System.out.printf("j) veículo de prevenção no dia <%d> : V%d%n", dia, matrizVeiculoDePrevencaoPorDia[dia - 1]);
+        System.out.printf("j) veículo de prevenção no dia <%d> : V%d%n", dia, matrizVeiculoDePrevencaoPorDia[dia]);
         System.out.printf("%n");
     }
 
@@ -79,7 +79,7 @@ public class NA_1232061_1232094 {
             for (int carro = 1; carro < matrizPlaneamento.length; carro++) {
                 if (matrizPlaneamento[carro][dia] == MenorKm) {
                     veiculoComMenosUso = determinarQualTemMaisBateria(cargaBateriasFimDoDia, dia, veiculoComMenosUso, carro);
-                } else if (matrizPlaneamento[carro][dia] < MenorKm) {
+                } else if (matrizPlaneamento[carro][dia] <= MenorKm) {
                     MenorKm = matrizPlaneamento[carro][dia];
                     veiculoComMenosUso = carro;
                 }
