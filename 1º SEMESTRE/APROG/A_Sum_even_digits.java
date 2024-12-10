@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A_Sum_even_digits {
+public class A_Sum_even_digit {
     public static void main(String[] args) {
 
         Scanner ler = new Scanner(System.in);
