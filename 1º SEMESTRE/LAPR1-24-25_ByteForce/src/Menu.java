@@ -39,10 +39,10 @@ public class Menu {
                     System.out.print("Digite a localização do ficheiro CSV: ");
                     ficheiroEntrada = ler.next();
                     arrayParaExecutarPrograma[2] = ficheiroEntrada;
-                    System.out.print("Digite o nome do ficheiro de saída: ");
+//                    System.out.print("Digite o nome do ficheiro de saída: ");
 //                    ficheiroSaida = ler.next();
 //                    arrayParaExecutarPrograma[4] = ficheiroSaida;
-//                    return arrayParaExecutarPrograma;
+                    return arrayParaExecutarPrograma;
                 case 2:
                     funcionalidade = String.valueOf(funcionalidadeP);
                     arrayParaExecutarPrograma[0] = funcionalidade;

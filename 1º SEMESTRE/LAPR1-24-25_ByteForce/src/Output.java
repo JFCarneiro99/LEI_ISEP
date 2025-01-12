@@ -26,7 +26,7 @@ public class Output {
             out.print(matriz[i][j] + "\n");
         }
         out.close();
-        System.out.printf("%nA matriz reconstruída foi escrita com sucesso na pasta %s.%n", caminhoFicheiro);
+        //System.out.printf("%nA matriz reconstruída foi escrita com sucesso na pasta %s.%n", caminhoFicheiro);
     }
 
     public static void escreverVetorNumFicheiro(double[] vetor, String caminhoFicheiro, String nomeFicheiro) throws FileNotFoundException {
