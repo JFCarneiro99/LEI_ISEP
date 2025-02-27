@@ -10,7 +10,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting null students array by number returns false")
     @Test
-    @Disabled
     public void ensureSortingNullNumbersArrayByNumberReturnsFalse() {
         //Arrange
         Student[] students = null;
@@ -24,7 +23,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting empty array by number works")
     @Test
-    @Disabled
     public void ensureSortingEmptyArraysByNumberWorks() {
         //Arrange
         Student[] students = {};
@@ -46,7 +44,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting one element array by number works")
     @Test
-    @Disabled
     public void ensureSortingOneElementArraysByNumberWorks() {
         //Arrange
         Student studentOne = new Student();
@@ -73,7 +70,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting two sorted elements array by number works")
     @Test
-    @Disabled
     public void ensureSortingTwoSortedElementArraysByNumberWorks() {
         //Arrange
         Student studentOne = new Student();
@@ -105,7 +101,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting two unsorted elements array by number works")
     @Test
-    @Disabled
     public void ensureSortingTwoUnsortedElementArraysByNumberWorks() {
         //Arrange
 
@@ -138,7 +133,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting unsorted array by number works")
     @Test
-    @Disabled
     public void ensureSortingUnsortedArraysByNumberWorks() {
         //Arrange
         Student studentOne = new Student();
@@ -173,7 +167,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting null students array by grade returns false")
     @Test
-    @Disabled
     public void ensureSortingNullNumbersArrayByGradeReturnsFalse() {
         //Arrange
         Student[] students = null;
@@ -187,7 +180,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting empty array by grade works")
     @Test
-    @Disabled
     public void ensureSortingEmptyArraysByGradeWorks() {
         //Arrange
         Student[] students = {};
@@ -209,7 +201,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting one element array by grade works")
     @Test
-    @Disabled
     public void ensureSortingOneElementArraysByGradeWorks() {
         //Arrange
         Student studentOne = new Student();
@@ -236,7 +227,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting two sorted elements array by grade works")
     @Test
-    @Disabled
     public void ensureSortingTwoSortedElementArraysByGradeWorks() {
         //Arrange
         Student studentOne = new Student();
@@ -268,7 +258,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting two unsorted elements array by grade works")
     @Test
-    @Disabled
     public void ensureSortingTwoUnsortedElementArraysByGradeWorks() {
         //Arrange
 
@@ -301,7 +290,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting unsorted array by grade works")
     @Test
-    @Disabled
     public void ensureSortingUnsortedArraysByGradeWorks() {
         //Arrange
         Student studentOne = new Student();
