@@ -9,7 +9,20 @@ public class ProblemOne {
      * @return Sorted array of integers.
      */
     public static int[] sortArrayAscending(int[] array) {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        if (array != null) {
+            int temp = 0;
+            int arraySize = array.length;
+
+            for (int i = 0; i < arraySize; i++) {
+                for (int j = 0; j < arraySize -  i - 1; j++) {
+                    if (array[j] > array[j + 1]) {
+                        temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
+            }
+        }
+        return array;
     }
 }
