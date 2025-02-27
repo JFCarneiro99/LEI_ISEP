@@ -10,7 +10,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure testing arrays individually fails")
     @Test
-    @Disabled
     public void ensureIndividuallyTestingArraysFails() {
         //Arrange
         int[] studentNumbers = {1200001, 1200032, 1190432, 1181208};
