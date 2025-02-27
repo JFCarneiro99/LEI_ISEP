@@ -33,7 +33,14 @@ public class ProblemOne {
      * @param indexTwo Index of the second element.
      */
     private static void swapArrayElements(int[] array, int indexOne, int indexTwo) {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        int temp;
+        int i = indexOne;
+        int j = indexTwo;
+
+        if (array[i] > array[j]) {
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
     }
 }
