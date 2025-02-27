@@ -26,8 +26,10 @@ public class ProblemOne {
     }
 
     private static boolean firstIsHigherThanSecond(int first, int second) {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        if (first > second) {
+            return true;
+        }
+        return false;
     }
 
     private static void swapArrayElements(int[] array, int indexOne, int indexTwo) {
