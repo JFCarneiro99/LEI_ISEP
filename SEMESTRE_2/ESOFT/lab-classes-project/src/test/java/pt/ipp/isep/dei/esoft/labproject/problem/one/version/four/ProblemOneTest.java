@@ -10,7 +10,6 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting a null array returns null")
     @Test
-    @Disabled
     public void ensureSortingNullArrayReturnsNull() {
         // Act
         int[] result = ProblemOne.sortArrayAscending(null);
@@ -21,7 +20,6 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting an array with two elements works")
     @Test
-    @Disabled
     public void ensureSortingAnEmptyArrayWorks() {
         // Arrange
         int[] data = {};
@@ -40,7 +38,6 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting an array with one element works")
     @Test
-    @Disabled
     public void ensureSortingOneElementArrayWorks() {
         // Arrange
         int[] data = {4};
@@ -59,7 +56,6 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting an array with two (already sorted) elements works.")
     @Test
-    @Disabled
     public void ensureSortingArrayWithTwoSortedElementsWorks() {
         // Arrange
         int[] data = {-1, 4};
@@ -78,7 +74,6 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting an array with two (unsorted) elements works.")
     @Test
-    @Disabled
     public void ensureSortingArrayWithTwoUnsortedElementsWorks() {
         // Arrange
         int[] data = {30, 25};
@@ -97,7 +92,7 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting an array with two equal elements works.")
     @Test
-    @Disabled
+
     public void ensureSortingArrayWithTwoEqualElementsWorks() {
         // Arrange
         int a = 30;
@@ -118,7 +113,6 @@ public class ProblemOneTest {
 
     @DisplayName("Ensure sorting an array with several unordered elements works.")
     @Test
-    @Disabled
     public void ensureSortingArrayWithSeveralUnsortedElementsWorks() {
         // Arrange
         int[] data = {30, 25, 25, -1, 20};
