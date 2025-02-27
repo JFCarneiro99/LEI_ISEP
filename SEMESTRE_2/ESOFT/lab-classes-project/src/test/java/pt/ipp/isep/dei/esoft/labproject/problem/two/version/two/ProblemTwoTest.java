@@ -10,7 +10,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting all null arrays returns false")
     @Test
-    @Disabled
     public void ensureSortingAllNullArraysReturnsNull() {
         // Act
         boolean result = ProblemTwo.sortStudentsByAscendingNumber(null, null, null);
@@ -21,7 +20,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting null numbers array returns false")
     @Test
-    @Disabled
     public void ensureSortingNullNumbersArrayReturnsFalse() {
         //Arrange
         int[] studentNumbers = null;
@@ -37,7 +35,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting null names array returns false")
     @Test
-    @Disabled
     public void ensureSortingNullNamesArrayReturnsFalse() {
         //Arrange
         int[] studentNumbers = {};
@@ -53,7 +50,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting null grades array returns false")
     @Test
-    @Disabled
     public void ensureSortingNullGrasedArrayReturnsFalse() {
         //Arrange
         int[] studentNumbers = {};
@@ -69,7 +65,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting all empty arrays works")
     @Test
-    @Disabled
     public void ensureSortingAllEmptyArraysWorks() {
         //Arrange
         int[] studentNumbers = {};
@@ -99,7 +94,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting one element array works")
     @Test
-    @Disabled
     public void ensureSortingOneElementArraysWorks() {
         //Arrange
         int number = 1200001;
@@ -133,7 +127,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting two sorted elements array works")
     @Test
-    @Disabled
     public void ensureSortingTwoSortedElementArraysWorks() {
         //Arrange
         int[] studentNumbers = {1200001, 1200032};
@@ -163,7 +156,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting two sorted elements array works")
     @Test
-    @Disabled
     public void ensureSortingTwoUnsortedElementArraysWorks() {
         //Arrange
         int[] studentNumbers = {1200032, 1200001};
@@ -193,7 +185,6 @@ class ProblemTwoTest {
 
     @DisplayName("Ensure sorting unsorted array works")
     @Test
-    @Disabled
     public void ensureSortingUnsortedArraysWorks() {
         //Arrange
         int[] studentNumbers = {1200001, 1200032, 1190432, 1181208};
