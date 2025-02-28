@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Automovel" />
         <module name="Saudacao" />
+        <module name="Data" />
       </profile>
     </annotationProcessing>
   </component>
