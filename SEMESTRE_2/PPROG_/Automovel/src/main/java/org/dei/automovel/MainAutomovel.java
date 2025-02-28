@@ -28,5 +28,6 @@ public class MainAutomovel {
             System.out.println("Os dois Automoveis tem a mesma cilindrada");
         }
 
+        System.out.println(a1.isCilindradaMaior(2000));
     }
 }
