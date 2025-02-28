@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JupyterPersistentConnectionParameters">
+    <option name="knownRemoteServers">
+      <list>
+        <JupyterConnectionParameters>
+          <option name="authType" value="notebook" />
+          <option name="token" value="6bfe3719b4deef4690faacd7f547cc9076ccdf1b25dd63cc" />
+          <option name="urlString" value="http://127.0.0.1:8889/" />
+          <authParams2>
+            <map>
+              <entry key="token" value="6bfe3719b4deef4690faacd7f547cc9076ccdf1b25dd63cc" />
+            </map>
+          </authParams2>
+        </JupyterConnectionParameters>
+      </list>
+    </option>
     <option name="moduleParameters">
       <map>
         <entry key="$PROJECT_DIR$/.idea/LEI_ISEP.iml">
           <value>
             <JupyterConnectionParameters>
-              <option name="managed" value="true" />
-              <option name="sdkName" value="Python 3.9" />
+              <option name="authType" value="notebook" />
+              <option name="token" value="6bfe3719b4deef4690faacd7f547cc9076ccdf1b25dd63cc" />
+              <option name="urlString" value="http://127.0.0.1:8889/" />
+              <authParams2>
+                <map>
+                  <entry key="token" value="6bfe3719b4deef4690faacd7f547cc9076ccdf1b25dd63cc" />
+                </map>
+              </authParams2>
             </JupyterConnectionParameters>
           </value>
         </entry>
