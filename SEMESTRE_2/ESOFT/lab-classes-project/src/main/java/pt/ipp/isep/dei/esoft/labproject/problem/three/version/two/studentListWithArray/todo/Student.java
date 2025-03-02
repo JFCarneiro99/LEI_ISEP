@@ -85,7 +85,16 @@ public class Student {
 
     @Override
     public boolean equals(Object other) {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        if(this == other){
+            return true;
+        }
+
+        if(other == null || this.getClass() != other.getClass()){
+            return false;
+        }
+        Student Student = (Student) other;
+
+        return this.number == Student.number;
+
     }
 }

@@ -10,8 +10,7 @@ public class StudentList {
 
     // Constructors
     public StudentList() {
-        throw new UnsupportedOperationException(); //it means that the constructor is not implemented yet
-        //TODO: Students should implement this constructor
+        this.students = new ArrayList();
     }
 
     public StudentList(Student[] students) {
@@ -26,40 +25,43 @@ public class StudentList {
     // Operations
 
     public void sortByAscendingNumber() {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        this.students.sort(new StudentList.SortByDescendingGradeComparator());
     }
 
     public void sortByDescendingGrade() {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        this.students.sort(new StudentList.SortByDescendingGradeComparator());
     }
 
     public Student[] toArray() {
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+        Student[] array = new Student[this.students.size()];
+        return this.students.toArray(array);
     }
 
-    public boolean add(Student student){
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+    public boolean add(Student student) {
+        if (student == null)
+            return false;
+        if (this.students.contains(student))
+            return false;
+        return this.students.add(student);
     }
 
-    public boolean remove(Student student){
-        throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-        //TODO: Students should implement this method
+    public boolean remove(Student student) {
+        if (student == null)
+            return false;
+        if (!this.students.contains(student))
+            return false;
+        return this.students.remove(student);
     }
 
     private class SortByAscendingNumberComparator implements Comparator<Student> {
         public int compare(Student st1, Student st2) {
-            throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-            //TODO: Students should implement this method
+            return st1.compareToByNumber(st2);
         }
     }
+
     private class SortByDescendingGradeComparator implements Comparator<Student> {
         public int compare(Student st1, Student st2) {
-            throw new UnsupportedOperationException(); //it means that the method is not implemented yet
-            //TODO: Students should implement this method
+            return st1.compareToByGrade(st2) * (-1);
         }
     }
 }

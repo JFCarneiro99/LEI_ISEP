@@ -10,7 +10,6 @@ class StudentListTest {
 
     @DisplayName("Ensure creating a studentlist works")
     @Test
-    @Disabled
     public void ensureCreateStudentListWorks() {
         // Act
         StudentList stList = new StudentList(); // StudentList empty
@@ -22,7 +21,6 @@ class StudentListTest {
 
     @DisplayName("Ensure creating a studentlist with some elements works")
     @Test
-    @Disabled
     public void ensureCreateStudentListWithSomeElementsWorks() {
         // Arrange
         Student studentOne = new Student(1200001,"Ana Maria Sousa");
@@ -44,7 +42,6 @@ class StudentListTest {
 
     @DisplayName("Ensure sorting an unsorted array by grade works")
     @Test
-    @Disabled
     public void ensureSortingUnsortedArraysByGradeWorks() {
         // Arrange
         Student studentOne = new Student(1200001,"Ana Maria Sousa");
@@ -68,7 +65,6 @@ class StudentListTest {
 
     @DisplayName("Ensure add a different student when array not empty works")
     @Test
-    @Disabled
     public void ensureAddDifferentStudentWhenArrayNotEmptyWorks(){
         // Arrange
         Student studentOne = new Student(1200054, "Moreira");
@@ -87,7 +83,6 @@ class StudentListTest {
 
     @DisplayName("Ensure add the same student twice fails")
     @Test
-    @Disabled
     public void ensureAddSameStudentTwiceFails(){
         // Arrange
         Student studentOne = new Student(1200054, "Moreira");
@@ -105,7 +100,6 @@ class StudentListTest {
 
     @DisplayName("Ensure add a student with the same number fails")
     @Test
-    @Disabled
     public void ensureAddStudentWithSameNumberFails(){
         // Arrange
         Student studentOne = new Student(1200054, "Moreira");
@@ -124,7 +118,6 @@ class StudentListTest {
 
     @DisplayName("ensure add null fails")
     @Test
-    @Disabled
     public void ensureAddNullFails(){
         // Arrange
         Student studentOne = new Student(1200054, "Moreira");
@@ -142,7 +135,6 @@ class StudentListTest {
 
     @DisplayName("Ensure remove the middle student in several works")
     @Test
-    @Disabled
     public void ensureRemoveMiddleStudentInSeveralWorks(){
         // Arrange
         Student studentOne = new Student(1200054, "Moreira");
@@ -166,7 +158,6 @@ class StudentListTest {
 
     @DisplayName("Ensure remove the same student twice returns false")
     @Test
-    @Disabled
     public void ensureRemoveSameStudentTwiceReturnsFalse(){
         // Arrange
         Student studentOne = new Student(1200054, "Moreira");

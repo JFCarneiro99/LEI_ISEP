@@ -10,7 +10,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a valid student works")
     @Test
-    @Disabled
     public void ensureCreateValidStudentWorks(){
         // Arrange + Act
         Student student = new Student( 1190001, "Paulo");
@@ -20,7 +19,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with six digits negative number fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWith6DigitsNegativeNumberFails() {
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(-190001, "Paulo Maio");
@@ -29,7 +27,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with seven digits negative number fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWith7DigitsNegativeNumberFails() {
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(-1190001, "Paulo Maio");
@@ -38,7 +35,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with longer digits number fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWithLongerDigitsNumberFails(){
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(11900013, "Paulo Maio");
@@ -47,7 +43,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with empty name fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWithEmptyNameFails(){
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(1190001, "");
@@ -56,7 +51,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with name full of spaces fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWithNameFullOfSpacesFails() {
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(1190001, " ");
@@ -65,7 +59,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with short name length fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWithShortNameLengthFails() {
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(1190001, "Rui");
@@ -74,7 +67,6 @@ class StudentTest {
 
     @DisplayName("Ensure creating a student with a valid number but invalid name fails")
     @Test
-    @Disabled
     public void ensureCreateStudentWithValidNumberButInvalidNameFails(){
         assertThrows(IllegalArgumentException.class, () -> {
             Student student = new Student(1980398, "Bia");
@@ -83,7 +75,6 @@ class StudentTest {
 
     @DisplayName("Ensure equals true due to the same student number")
     @Test
-    @Disabled
     public void ensureEqualsTrueDueToSameNumber() {
         // Arrange
         Student studentOne = new Student( 1980398, "Beatriz");
@@ -96,7 +87,6 @@ class StudentTest {
 
     @DisplayName("Ensure equals true to itself")
     @Test
-    @Disabled
     public void ensureEqualsTrueToItself() {
         // Arrange
         Student studentOne = new Student( 1980398, "Beatriz");
@@ -106,7 +96,6 @@ class StudentTest {
 
     @DisplayName("Ensure equals false due to null")
     @Test
-    @Disabled
     public void ensureEqualsFalseDueToNull() {
         // Arrange
         Student studentOne = new Student( 1980398, "Beatriz");
@@ -118,7 +107,6 @@ class StudentTest {
 
     @DisplayName("Ensure equals false due to different type")
     @Test
-    @Disabled
     public void ensureEqualsFalseDueToDifferentType() {
         // Arrange
         Student studentOne = new Student( 1980398, "Beatriz");
@@ -130,7 +118,6 @@ class StudentTest {
 
     @DisplayName("Ensure equals false due to different numbers")
     @Test
-    @Disabled
     public void ensureEqualsFalseDueToDifferentNumbers() {
         // Arrange
         Student studentOne = new Student( 1980398, "Beatriz");

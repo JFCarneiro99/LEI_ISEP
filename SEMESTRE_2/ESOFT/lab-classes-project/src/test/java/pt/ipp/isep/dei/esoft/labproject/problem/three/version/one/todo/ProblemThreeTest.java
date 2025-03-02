@@ -65,7 +65,7 @@ class ProblemThreeTest {
 //        assertEquals(expectedStudents.length, students.length);
 
         // check array content
-//        assertArrayEquals(expectedStudents, students);
+        // assertArrayEquals(expectedStudents, students);
     }
 
     @DisplayName("Ensure sorting two sorted elements array by number works")

@@ -36,7 +36,7 @@ public class ProblemThree {
         //Sort the students in ascending order using two for loops
         for (int i = 0; i < arraySize; i++) {
             for (int j = 0; j < arraySize - i - 1; j++) {
-                if (students[j].getGrade(students[j]) < students[j].getGrade(students[j + 1])) {
+                if (students[j].getGrade() < students[j + 1].getGrade()) {
                     //swap elements if not in order - in students
                     swapStudentArrayElements(students, j, j + 1);
                 }
