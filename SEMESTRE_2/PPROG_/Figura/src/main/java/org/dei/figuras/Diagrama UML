@@ -1,0 +1,21 @@
+          +------------------+
+          |     Figura       |  (Classe base opcional)
+          +------------------+
+          | - corPreenchimento: String |
+          +------------------+
+          | + getCor(): String |
+          | + setCor(cor: String): void |
+          +------------------+
+                  ▲
+                  │
+    +------------+------------+
+    |                         |
++-----------+          +------------+
+| Retangulo |          |  Circulo   |
++-----------+          +------------+
+| - comprimento: double|  | - raio: double  |
+| - largura: double    |  | - corPreenchimento: String |
++-----------+          +------------+
+| + getArea(): double  |  | + getArea(): double |
+| + getPerimetro(): double |  | + getPerimetro(): double |
++-----------+          +------------+
