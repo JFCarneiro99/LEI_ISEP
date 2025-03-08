@@ -10,6 +10,7 @@
         <module name="Figura" />
         <module name="Automovel" />
         <module name="Saudacao" />
+        <module name="Ginasio" />
       </profile>
     </annotationProcessing>
   </component>
