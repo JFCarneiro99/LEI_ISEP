@@ -1,0 +1,20 @@
+@startuml
+interface Cores {
+    +String AZUL
+    +String CINZENTO
+    +String ENCARNADO
+    +String VERDE
+}
+
+class Veiculo {
+    - String marca
+    - String modelo
+    - int ano
+
+    + void acelerar()
+    + void travar()
+    + void pintar(String cor)
+}
+
+Veiculo ..> Cores : usa
+@enduml
