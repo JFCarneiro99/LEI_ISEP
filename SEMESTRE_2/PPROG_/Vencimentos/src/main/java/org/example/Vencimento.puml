@@ -2,7 +2,7 @@
 class Trabalhador {
     + nome: String
     + «trabalhador(nome: String): String»
-    + «trabalhador(): NOME_POR_OMISSÃO»
+    + «trabalhador(): NOME_POR_OMISSÃO: String»
     + getNome(): String
     + setNome(nome: String): String
     + toString(): String
@@ -17,25 +17,48 @@ class TrabalhadorPeca {
     - pagamentoPecaTipo1 = 6.5f: float
     - pagamentoPecaTipo2 = 9.5f: float
     + «trabalhadorPecas(nome: String, numeroPecasTipo1: int, numeroPecasTipo2: int): String»
-    + «trabalhadorPecas(nome: String): NOME_POR_OMISSÃO, NUMERO_PECAS_TIPO1_POR_OMISSAO, NUMERO_PECAS_TIPO2_POR_OMISSAO»
-    + «trabalhadorPecas(): NOME_POR_OMISSÃO, NUMERO_PECAS_TIPO1_POR_OMISSAO, NUMERO_PECAS_TIPO2_POR_OMISSAO»
-    + calcularVencimento(): float
+    + «trabalhadorPecas(nome: String): NOME_POR_OMISSÃO, NUMERO_PECAS_TIPO1_POR_OMISSAO, NUMERO_PECAS_TIPO2_POR_OMISSAO: String»
+    + «trabalhadorPecas(): NOME_POR_OMISSÃO, NUMERO_PECAS_TIPO1_POR_OMISSAO, NUMERO_PECAS_TIPO2_POR_OMISSAO: String»
     + getNumeroPecasTipo1(): int
     + getNumeroPecasTipo2(): int
-    + setNumeroPecasTipo1(numeroPecas): int
-
+    + setNumeroPecasTipo1(numeroPecasTipo1: int): int
+    + setNumeroPecasTipo2(numeroPecasTipo2: int): int
+    + calcularVencimento(): float
+    + getPagamentoPecaTipo1(): float
+    + getPagamentoPecaTipo2(): float
+    + setPagamentoPecaTipo1(pagamentoPecaTipo1: float): void
+    + setPagamentoPecaTipo2(pagamentoPecaTipo2: float): void
 }
 
 class TrabalhadorComissao {
     - salarioBase: float
-    - percentagemComissao: float
-    - totalVendas: float
+    - comissao: float
+    - SALARIO_POR_OMISSAO = 635.0f: float
+    - VENDAS_POR_OMISSAO = 0: int
+    - COMISSAO_POR_OMISSAO = 0: int
+    + «TrabalhadorComissao(nome: String, salarioBase: float, vendas: float, comissao: float): String»
+    + «TrabalhadorComissao(nome: String): SALARIO_POR_OMISSAO, VENDAS_POR_OMISSAO, COMISSAO_POR_OMISSAO: String»
+    + «TrabalhadorComissao(): NOME_POR_OMISSÃO, SALARIO_POR_OMISSAO, VENDAS_POR_OMISSAO, COMISSAO_POR_OMISSAO: String»
+    + getVendas(): float
+    + getComissao(): float
+    + getSalarioBase(salarioBase: float): void
+    + setVendas(vendas: float): void
+    + setComissao(comissao: float): void
     + calcularVencimento(): float
 }
 
 class TrabalhadorHora {
+    - numeroHoras: int
     - pagamentoHora: float
-    - horasTrabalho: int
+    - NUMERO_HORAS_POR_OMISSAO = 0: int
+    - PAGAMENTO_HORA_POR_OMISSAO = 10.0f: float
+    + «TrabalhadorHora(nome: String, numeroHoras: int, pagamentoHora: float): String»
+    + «TrabalhadorHora(nome: String): NUMERO_HORAS_POR_OMISSAO, PAGAMENTO_HORA_POR_OMISSAO: String»
+    + «TrabalhadorHora(): NOME, NUMERO_HORAS_POR_OMISSAO, PAGAMENTO_HORA_POR_OMISSAO: String»
+    + getNumeroHoras(): int
+    + getPagamentoHora(): float
+    + setNumeroHoras(numeroHoras: int): void
+    + setPagamentoHora(pagamentoHoras: float): void
     + calcularVencimento(): float
 }
 
