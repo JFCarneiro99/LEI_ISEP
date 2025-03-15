@@ -1,0 +1,49 @@
+@startuml
+class Trabalhador {
+    + nome: String
+    + «trabalhador(nome: String): String»
+    + «trabalhador(): NOME_POR_OMISSÃO»
+    + getNome(): String
+    + setNome(nome: String): String
+    + toString(): String
+    + calcularVencimento(): float
+}
+
+class TrabalhadorPeca {
+    - numeroPecasTipo1: int
+    - numeroPecasTipo2: int
+    - NUMERO_PECAS_TIPO1_POR_OMISSAO = 0: int
+    - NUMERO_PECAS_TIPO2_POR_OMISSAO = 0: int
+    - pagamentoPecaTipo1 = 6.5f: float
+    - pagamentoPecaTipo2 = 9.5f: float
+    + «trabalhadorPecas(nome: String, numeroPecasTipo1: int, numeroPecasTipo2: int): String»
+    + «trabalhadorPecas(nome: String): NOME_POR_OMISSÃO, NUMERO_PECAS_TIPO1_POR_OMISSAO, NUMERO_PECAS_TIPO2_POR_OMISSAO»
+    + «trabalhadorPecas(): NOME_POR_OMISSÃO, NUMERO_PECAS_TIPO1_POR_OMISSAO, NUMERO_PECAS_TIPO2_POR_OMISSAO»
+    + calcularVencimento(): float
+    + getNumeroPecasTipo1(): int
+    + getNumeroPecasTipo2(): int
+    + setNumeroPecasTipo1(numeroPecas): int
+
+}
+
+class TrabalhadorComissao {
+    - salarioBase: float
+    - percentagemComissao: float
+    - totalVendas: float
+    + calcularVencimento(): float
+}
+
+class TrabalhadorHora {
+    - pagamentoHora: float
+    - horasTrabalho: int
+    + calcularVencimento(): float
+}
+
+class MainVencimentos {
+    + main(args: String[]): void
+}
+
+Trabalhador <|-- TrabalhadorPeca
+Trabalhador <|-- TrabalhadorComissao
+Trabalhador <|-- TrabalhadorHora
+@enduml

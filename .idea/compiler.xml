@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Tempo" />
         <module name="Automovel" />
+        <module name="Impostos" />
         <module name="Ginasio" />
         <module name="Tributaveis" />
         <module name="Data" />
