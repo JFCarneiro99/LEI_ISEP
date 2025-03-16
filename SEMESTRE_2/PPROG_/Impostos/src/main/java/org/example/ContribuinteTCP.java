@@ -2,8 +2,16 @@ package org.example;
 
 public class ContribuinteTCP extends Contribuinte {
 
-    public float calcularImpostos() {
+    private static float taxaRT = 0.03f;
 
-        return 0;
+    public ContribuinteTCP(String nome, String morada, double rendimentoTrabalho, double outrosRendimentos) {
+        super(nome, morada, rendimentoTrabalho, outrosRendimentos);
+    }
+
+    @Override
+    public double calcularImposto() {
+        float taxaOR = getOutrosRendimentos() <= 50000 ? 0.02f : 0.05f;
+        return getRendimentoTrabalho() * taxaRT + getOutrosRendimentos() * taxaOR;
     }
 }
+

@@ -1,40 +1,42 @@
 package org.example;
 
-import org.w3c.dom.ls.LSOutput;
-
-public class Contribuinte {
-
+public abstract class Contribuinte {
     private String nome;
     private String morada;
-
-    private static final String NOME_POR_OMISSAO = "Sem nome";
-    private static final String MORADA_POR_OMISSAO = "Sem morada";
-
-    public Contribuinte(String nome , String morada) {
-        this.nome = nome;
-        this.morada = morada;
-    }
+    private double rendimentoTrabalho;
+    private double outrosRendimentos;
 
     public Contribuinte() {
-        nome = NOME_POR_OMISSAO;
-        morada = MORADA_POR_OMISSAO;
+    }
+
+    public Contribuinte(String nome, String morada, double rendimentoTrabalho, double outrosRendimentos) {
+        this.nome = nome;
+        this.morada = morada;
+        this.rendimentoTrabalho = rendimentoTrabalho;
+        this.outrosRendimentos = outrosRendimentos;
+    }
+
+    public abstract double calcularImposto();
+
+    @Override
+    public String toString() {
+        return "Contribuinte{" +
+                "nome='" + nome + '\'' +
+                ", morada='" + morada + '\'' +
+                ", rendimentoTrabalho=" + rendimentoTrabalho +
+                ", outrosRendimentos=" + outrosRendimentos +
+                '}';
     }
 
     public String getNome() {
         return nome;
     }
-    public String getMorada() {
-        return morada;
+
+    public double getRendimentoTrabalho() {
+        return rendimentoTrabalho;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public void setMorada(String morada) {
-        this.morada = morada;
-    }
-
-    public String toString() {
-        return nome + ", " + morada;
+    public double getOutrosRendimentos() {
+        return outrosRendimentos;
     }
 }
