@@ -1,13 +1,13 @@
 package org.dei.tributaveis;
 
-public class Moradia {
+public class Moradia implements Cores, Tributavel {
 
     private String morada;
     private float area;
     private String cor;
 
-    //    Variáveis para a alínea 13
-//    private static int fatorImposto = 2;
+    //Variáveis para a alínea 13
+    private static int fatorImposto = 2;
 
     public Moradia(String morada, float area, String cor) {
         this.morada = morada;
@@ -43,5 +43,14 @@ public class Moradia {
     public String toString() {
         return String.format("Moradia situada na %s com área de %.1f tem cor %s",
                 morada, area, cor);
+    }
+
+    @Override
+    public double calcularImposto() {
+        return fatorImposto * area;
+    }
+
+    public static int getFatorImposto() {
+        return fatorImposto;
     }
 }

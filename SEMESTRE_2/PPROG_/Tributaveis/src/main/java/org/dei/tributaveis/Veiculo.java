@@ -1,15 +1,15 @@
 package org.dei.tributaveis;
 
-public class Veiculo implements Cores {
+public class Veiculo implements Cores, Tributavel{
 
     private String matricula;
     private int cilindrada;
     private String cor;
 
 //    Variáveis para a alínea 13
-//    private static int limiteEscalao1 = 1500;
-//    private static float impostoEscalao1 = 15;
-//    private static float impostoEscalao2 = 40;
+    private static int limiteEscalao1 = 1500;
+    private static float impostoEscalao1 = 15;
+    private static float impostoEscalao2 = 40;
 
     public Veiculo(String matricula, int cilindrada, String cor) {
         this.matricula = matricula;
@@ -45,6 +45,15 @@ public class Veiculo implements Cores {
     public String toString() {
         return String.format("Veículo com matrícula %s e cilindrada %d tem cor %s",
                 matricula, cilindrada, cor);
+    }
+
+    @Override
+    public double calcularImposto() {
+
+        if (cilindrada > limiteEscalao1) {
+            return impostoEscalao2;
+        }
+        else return impostoEscalao1;
     }
 
 }
