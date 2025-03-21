@@ -1,0 +1,33 @@
+@startuml
+
+class Contador {
+    - id: str
+    - consumo: int
+    + calcular_custo(): float
+}
+
+class ContadorGas {
+    + calcular_custo(): float
+}
+
+class ContadorEletricidade {
+    - potencia_contratada: float
+    + calcular_custo(): float
+}
+
+class ContadorEletricidadeSimples {
+    + calcular_custo(): float
+}
+
+class ContadorEletricidadeBiHorario {
+    - consumo_vazio: int
+    - consumo_fora_vazio: int
+    + calcular_custo(): float
+}
+
+Contador <|-- ContadorGas
+Contador <|-- ContadorEletricidade
+ContadorEletricidade <|-- ContadorEletricidadeSimples
+ContadorEletricidade <|-- ContadorEletricidadeBiHorario
+
+@enduml
