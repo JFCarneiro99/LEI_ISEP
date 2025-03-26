@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/Automovel_2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/Automovel_2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Automovel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Automovel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Automovel_2_/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Automovel_2_/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Contadores/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Contadores/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Data/src/main/java" charset="UTF-8" />
@@ -13,6 +17,10 @@
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Ginasio/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Impostos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Impostos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/PL5-VencimentosBase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/PL5-VencimentosBase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/TP4-FigurasComComparableEComparator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/TP4-FigurasComComparableEComparator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Tempo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Tempo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SEMESTRE_2/PPROG_/Tributaveis/src/main/java" charset="UTF-8" />

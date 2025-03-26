@@ -17,7 +17,17 @@
         <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/Vencimentos/pom.xml" />
         <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/Impostos/pom.xml" />
         <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/Contadores/pom.xml" />
+        <option value="$PROJECT_DIR$/SEMESTRE_2/Automovel_2/pom.xml" />
+        <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/Automovel_2_/pom.xml" />
+        <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/TP4-FigurasComComparableEComparator/pom.xml" />
+        <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/PL5-VencimentosBase/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SEMESTRE_2/Automovel_2/pom.xml" />
+        <option value="$PROJECT_DIR$/SEMESTRE_2/PPROG_/Automovel_2_/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK" />

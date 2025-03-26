@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Contadores" />
+        <module name="PL5-VencimentosBase" />
         <module name="Tempo" />
         <module name="Automovel" />
         <module name="Impostos" />
+        <module name="TP4-FigurasComComparableEComparator" />
         <module name="Ginasio" />
         <module name="Tributaveis" />
         <module name="Data" />
@@ -18,5 +20,9 @@
         <module name="Saudacao" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Automovel_2" target="23" />
+      <module name="Automovel_2_" target="23" />
+    </bytecodeTargetLevel>
   </component>
 </project>
