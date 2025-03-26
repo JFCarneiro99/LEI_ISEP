@@ -7,16 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Contadores" />
-        <module name="PL5-VencimentosBase" />
+        <module name="VencimentosBase" />
         <module name="Tempo" />
         <module name="Automovel" />
         <module name="Impostos" />
-        <module name="TP4-FigurasComComparableEComparator" />
         <module name="Ginasio" />
         <module name="Tributaveis" />
         <module name="Data" />
         <module name="Figura" />
         <module name="Vencimentos" />
+        <module name="FigurasComComparableEComparator" />
         <module name="Saudacao" />
       </profile>
     </annotationProcessing>
