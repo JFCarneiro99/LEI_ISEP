@@ -1,33 +1,54 @@
 @startuml
-
 class Contador {
-    - id: str
-    - consumo: int
-    + calcular_custo(): float
+    + identificador: String
+    + nomeCliente: String
+    + consumoMes: int
+    + IDENTIFICADOR_POR_OMISSAO = "Desconhecido" : String
+    + NOME_CLIENTE_POR_OMISSAO = "Sem Nome" : String
+    + CONSUMO_MES_POR_OMISSAO = 0 : int
+    + «Contador(identificador: String, nomeCliente: String, consumoMes: int)»
+    + «Contador(): IDENTIFICADOR_POR_OMISSAO, NOME_CLIENTE_POR_OMISSAO, CONSUMO_MES_POR_OMISSAO»
+    + getIdentificador(): String
+    + getNomeCliente(): String
+    + calcularCusto(): double
 }
 
 class ContadorGas {
-    + calcular_custo(): float
+    - CUSTO_UNITARIO = 0.8: double
+    + «ContadorGas(identificador: String, nomeCliente: String, consumoMes: int)»
+    + «ContadorGas(): "GAS-"IDENTIFICADOR_POR_OMISSÃO, NOME_CLIENTE_POR_OMISSAO, CONSUMO_MES_POR_OMISSAO»
+    + calcularCusto(): double
 }
 
 class ContadorEletricidade {
-    - potencia_contratada: float
-    + calcular_custo(): float
+    + «ContadorEletricidade(identificador: String, nomeCliente: String, consumoMes: int)»
+    + «ContadorEletricidade(): "ELECT-"IDENTIFICADOR_POR_OMISSÃO, NOME_CLIENTE_POR_OMISSAO, CONSUMO_MES_POR_OMISSAO»
 }
+hide ContadorEletricidade fields
 
 class ContadorEletricidadeSimples {
-    + calcular_custo(): float
+    - custoUnitario: double
+    + «ContadorEletricidadeSimples(identificador: String, nomeCliente: String, consumoMes: int, potenciaContratada: double)»
+    + «ContadorEletricidadeSimples(): "ELECT-S-"IDENTIFICADOR_POR_OMISSÃO, NOME_CLIENTE_POR_OMISSAO, CONSUMO_MES_POR_OMISSAO, 3.45»
+    + calcularCusto(): double
 }
 
 class ContadorEletricidadeBiHorario {
-    - consumo_vazio: int
-    - consumo_fora_vazio: int
-    + calcular_custo(): float
+    - consumoHorasVazio: double
+    - consumoForaVazio: double
+    - custoHorasVazio: double
+    - custoForaVazio: double
+    + «ContadorEletricidadeBiHorario(identificador: String, nomeCliente: String, consumoHorasVazio: int, consumoForaVazio: int, potenciaContratada: double)»
+    + «ContadorEletricidadeBiHorario(): "ELECT-BH-"IDENTIFICADOR_POR_OMISSÃO, NOME_CLIENTE_POR_OMISSAO, CONSUMO_MES_POR_OMISSAO, CONSUMO_MES_POR_OMISSAO, 3.45»
+    + calcularCusto(): double
+}
+
+class GestaoContadores {
+    + main(args: String[]): void
 }
 
 Contador <|-- ContadorGas
 Contador <|-- ContadorEletricidade
 ContadorEletricidade <|-- ContadorEletricidadeSimples
 ContadorEletricidade <|-- ContadorEletricidadeBiHorario
-
 @enduml

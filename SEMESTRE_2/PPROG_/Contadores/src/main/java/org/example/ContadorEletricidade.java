@@ -1,8 +1,7 @@
 package org.example;
 
-public abstract class ContadorEletricidade extends Contador{
-
-    // prefixo
-    // contador
-
+abstract class ContadorEletricidade extends Contador {
+    public ContadorEletricidade(String identificador, String nomeCliente, int consumoMes) {
+        super(identificador, nomeCliente, consumoMes);
+    }
 }

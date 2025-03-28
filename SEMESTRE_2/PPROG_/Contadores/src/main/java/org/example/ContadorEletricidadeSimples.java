@@ -1,8 +1,15 @@
 package org.example;
 
-public class ContadorEletricidadeSimples extends ContadorEletricidade{
+class ContadorEletricidadeSimples extends ContadorEletricidade {
+    private double custoUnitario;
 
-    // consumo simples
+    public ContadorEletricidadeSimples(String identificador, String nomeCliente, int consumoMes, double potenciaContratada) {
+        super(identificador, nomeCliente, consumoMes);
+        this.custoUnitario = (potenciaContratada < 6.9) ? 0.13 : 0.16;
+    }
 
-
+    @Override
+    public double calcularCusto() {
+        return consumoMes * custoUnitario;
+    }
 }
