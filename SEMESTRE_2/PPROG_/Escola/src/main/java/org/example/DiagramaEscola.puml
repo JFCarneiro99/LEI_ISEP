@@ -1,0 +1,51 @@
+@startuml
+
+abstract class Pessoa {
+  - nome: String
+  - numeroIdentificacaoCivil: int
+  - NOME_POR_OMISSAO : "sem nome"
+  - NUMERO_IDENTIFICACAO_POR_OMISSAO : 0
+  + Pessoa() : NOME_POR_OMISSAO, NUMERO_IDENTIFICACAO_POR_OMISSAO
+  + Pessoa(nome : String, numeroIdentificacao : int)
+  + getNome(): String
+  + getNumeroIdentificacao(): int
+  {abstract} + calcularValorMensal(): double
+}
+
+class Professor {
+  - categoria: String
+  - CATEGORIA_POR_OMISSAO: "sem categoria"
+  - {static} salarioBase: double = 1500.0
+  - {static} adjunto: double = 0.20
+  - {static} coordenador: double = 0.50
+  + Professor() : NOME_POR_OMISSAO, NUMERO_IDENTIFICACAO_POR_OMISSAO, CATEGORIA_POR_OMISSAO
+  + Professor(nome : String, numeroIdentificacao: int, categoria: String)
+  + calcularValorMensal(): double
+  + {static} setSalarioBase(double): void
+  + {static} setMajoracoes(double, double): void
+}
+
+enum Categoria {
+  ASSISTENTE
+  ADJUNTO
+  COORDENADOR
+}
+
+class Aluno {
+  - numeroMecanografico: int
+  - NUMERO_MECANOGRAFO_POR_OMISSAO : 0
+  - bolseiro: boolean
+  - valorBolsa: double
+  + Aluno()
+  + Aluno(String, String, String, boolean, double)
+  + calcularValorMensal(): double
+  + setBolseiro(boolean): void
+  + setValorBolsa(double): void
+}
+
+Pessoa <|-- Professor
+Pessoa <|-- Aluno
+Professor *-- Categoria
+
+
+@enduml
