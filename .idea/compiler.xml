@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Contadores" />
+        <module name="PL5-VencimentosBase" />
         <module name="Tempo" />
         <module name="Automovel" />
         <module name="Impostos" />
         <module name="Ginasio" />
         <module name="Tributaveis" />
+        <module name="VencimentosBase__" />
         <module name="Data" />
         <module name="Figura" />
         <module name="Vencimentos" />
@@ -23,6 +25,8 @@
       <module name="Automovel_2_" target="23" />
       <module name="FigurasComComparableEComparator" target="1.8" />
       <module name="VencimentosBase" target="1.8" />
+      <module name="VencimentosBase_" target="23" />
+      <module name="VencimentosComComparator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
