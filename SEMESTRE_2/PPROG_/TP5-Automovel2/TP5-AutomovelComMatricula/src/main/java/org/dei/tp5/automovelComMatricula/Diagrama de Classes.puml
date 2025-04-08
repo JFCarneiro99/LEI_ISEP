@@ -1,0 +1,19 @@
+@startuml
+
+class Automovel{
+    - marca : String
+    - matricula : String
+}
+
+class Matricula{
+    - matricula : String
+    - DatMatricula : Data
+}
+
+class Data{
+}
+
+
+
+
+@enduml

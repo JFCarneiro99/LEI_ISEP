@@ -14,6 +14,7 @@
         <module name="Contadores" />
         <module name="PL5-VencimentosBase" />
         <module name="Biblioteca" />
+        <module name="TP5-AutomovelComProprietario" />
         <module name="Tempo" />
         <module name="Automovel" />
         <module name="TP5-AutomovelComMatricula" />

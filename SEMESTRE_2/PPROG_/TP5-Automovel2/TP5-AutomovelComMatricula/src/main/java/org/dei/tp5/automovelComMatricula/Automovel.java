@@ -13,8 +13,8 @@ public class Automovel {
 
     public Automovel(String marca, Matricula matricula, Pessoa proprietario) {
         this.marca = marca;
-        this.matricula = matricula;
-//        this.matricula = new Matricula(matricula);
+        // this.matricula = matricula;
+        this.matricula = new Matricula(matricula);
         this.proprietario = proprietario;
     }
     
@@ -24,7 +24,7 @@ public class Automovel {
         this.proprietario = proprietario;
     }
 
-    public Automovel() {
+    public Automovel(Automovel a) {
         marca = MARCA_POR_OMISSAO;
         matricula = new Matricula();
         proprietario = new Pessoa();

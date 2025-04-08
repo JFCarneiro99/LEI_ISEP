@@ -1,0 +1,15 @@
+@startuml
+
+class Automovel {
+    - marca: String
+    - proprietario: Pessoa
+}
+
+class Pessoa{
+    - nome : String
+    - idCivil : int
+}
+
+Automovel o-- Pessoa
+
+@enduml
