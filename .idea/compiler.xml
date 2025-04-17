@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Impostos" />
+        <module name="TP6-Pessoa" />
         <module name="Ginasio" />
         <module name="VencimentosBase__" />
         <module name="Data" />
         <module name="Figura" />
+        <module name="TP2-Figuras" />
+        <module name="TP3-Tributaveis" />
         <module name="Contadores" />
         <module name="PL5-VencimentosBase" />
         <module name="Biblioteca" />
@@ -29,7 +32,6 @@
       <module name="Automovel_2" target="23" />
       <module name="Automovel_2_" target="23" />
       <module name="FigurasComComparableEComparator" target="1.8" />
-      <module name="TP6-Pessoa" target="1.8" />
       <module name="VencimentosBase" target="1.8" />
       <module name="VencimentosBase_" target="23" />
       <module name="VencimentosComComparator" target="1.8" />
